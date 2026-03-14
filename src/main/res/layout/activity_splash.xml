@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1E1E2E">
+
+    <TextView
+        android:text="💰"
+        android:textSize="64sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TextView
+        android:text="ExpenseTracker"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:text="Track your money smartly"
+        android:textSize="14sp"
+        android:textColor="#AAAAAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

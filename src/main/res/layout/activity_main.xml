@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Top Dark Card -->
+    <LinearLayout
+        android:background="#1E1E2E"
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Total Expenses"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvTotalBalance"
+            android:text="₹0"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Total Transactions"
+                    android:textColor="#AAAAAA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvTotalCount"
+                    android:text="0"
+                    android:textColor="#4CAF50"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Highest Expense"
+                    android:textColor="#AAAAAA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHighest"
+                    android:text="₹0"
+                    android:textColor="#F44336"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Recent Transactions Label -->
+    <TextView
+        android:text="Recent Transactions"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Filter Buttons -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/filterLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/btnAll"
+                android:text="All"
+                android:textSize="12sp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#1E1E2E"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"/>
+
+            <Button
+                android:id="@+id/btnFood"
+                android:text="🍕 Food"
+                android:textSize="12sp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="#1E1E2E"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"/>
+
+            <Button
+                android:id="@+id/btnTransport"
+                android:text="🚌 Transport"
+                android:textSize="12sp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="#1E1E2E"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"/>
+
+            <Button
+                android:id="@+id/btnBills"
+                android:text="📱 Bills"
+                android:textSize="12sp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="#1E1E2E"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"/>
+
+            <Button
+                android:id="@+id/btnShopping"
+                android:text="🛒 Shopping"
+                android:textSize="12sp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="#1E1E2E"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"/>
+
+            <Button
+                android:id="@+id/btnEntertainment"
+                android:text="🎬 Entertainment"
+                android:textSize="12sp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="#1E1E2E"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Transaction List -->
+    <ListView
+        android:id="@+id/transactionList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/btnAddExpense"
+        android:text="+ Add Expense"
+        android:backgroundTint="#1E1E2E"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
