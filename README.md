@@ -13,7 +13,7 @@ A fully functional **Expense Tracker Android App** built in Android Studio using
 <!-- Upload your screenshots to GitHub and replace the links below -->
 | Splash Screen | Home Screen | Add Expense | Transaction Detail |
 |---|---|---|---|
-| ![Splash](ExpenseTracker/splash.png) | ![Home](ExpenseTracker/home.png) | ![Add](ExpenseTracker/add_expense.png) | ![Detail](ExpenseTracker/detail.png) |
+| ![Splash](splash.png) | ![Home](home.png) | ![Add](add_expense.png) | ![Detail](detail.png) |
 
 ---
 
